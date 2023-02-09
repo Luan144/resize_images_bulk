@@ -25,10 +25,15 @@ Algorithm to resize images in bulk using PIL
 -prefix: prefix string inserted to the resulting image's name (default = "").
 
 ### Usage:
-I - Put your dataset in folders inside the "datasets" folder.
+I - Clone this repository using `git clone <insert repository URL>`
 
-II - run `resize_bulk$ python resize_bulk.py -padding <insert padding> -x <insert expected width> -y <insert expected height>. -prefix <insert prefix>` 
+II - Make sure pip is up-to-date, then install the requirements using `resize_bulk$ pip install - requirements.txt` 
 
-III - The resulting images will be organized in folders with the same names that the original ones inside "results" folder.
+
+III - Put your dataset in folders inside the "datasets" folder.
+
+IV - run `resize_bulk$ python resize_bulk.py -padding <insert padding> -x <insert expected width> -y <insert expected height>. -prefix <insert prefix>` 
+
+V - The resulting images will be organized inside the "results" folder in folders with the same names of the original ones.
 
  
