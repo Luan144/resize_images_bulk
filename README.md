@@ -7,13 +7,13 @@ Algorithm to resize images in bulk using PIL
 - Using zero padding grants that the image ratio is maintained. Without padding the ratio WILL be changed;
 
 
-- All images you want to resize are in folders inside the "datasets" folder;
+- All images you want to resize must be in folders inside the "datasets" folder;
 
 
 - Anything except for folders in the "datasets" folder will be ignored without warnings;
 
 
-- You will get a assertion error if the "datasets" folder is empty.
+- You will get an assertion error if the "datasets" folder is empty.
 
 ### Arguments to parse:
 -padding: use "padding" if you want resize using zero padding. Anything else will result in resizing without padding (default = "padding"). 
