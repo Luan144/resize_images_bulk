@@ -15,6 +15,9 @@ if __name__ == "__main__":
     dir_list = [x for x in Path("datasets").iterdir() if x.is_dir()]
     assert dir_list != [], "Datasets folder is empty."
 
+    if "results" not in os.listdir():
+        os.mkdir("results")
+
     for folder in dir_list:
         if folder.stem not in os.listdir("results"):
             os.mkdir("results/"+folder.stem)
